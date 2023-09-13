@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-US-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Flask</title>
+</head>
+<body>
+    <h1 style="color: black; text-align: center; margin-top: 100px;"> Welcome!</h1> 
+    <div style="display: flex; margin: 0px auto; width: fit-content;">
+        {% if not num %}
+            <h2 style="background-color: lightblue; border: solid; width: 100px; margin: 5px; height: 100px;"</h2>
+            <h2 style="background-color: lightblue; border: solid; width: 100px; margin: 5px; height: 100px;"</h2>
+            <h2 style="background-color: lightblue; border: solid; width: 100px; margin: 5px; height: 100px;"</h2>
+        {% else %}
+        {% for x in range(num)%}
+            <h2 style="background-color: {{color}}; border: solid; width: 100px; margin: 5px; height: 100px;"</h2>
+        {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>
